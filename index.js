@@ -158,3 +158,15 @@ const isPalindrome = function (string) {
 };
 isPalindrome("madam"); // Output: true
 isPalindrome("hello"); // Output: false
+
+console.log(countVowels("hello")); // Output: 2
+function countVowels(string) {
+  let vcount = 0;
+  let vowels = "aeiou";
+  for (let i = 0; i < string.length; i++) {
+    if (vowels.includes(string[i].toLowerCase())) {
+      vcount++;
+    }
+  }
+  return vcount;
+}
