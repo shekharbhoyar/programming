@@ -170,3 +170,32 @@ function countVowels(string) {
   }
   return vcount;
 }
+
+// console.log(sumArray([1, 2, 3, 4])); // Output: 10
+//1.approach
+// function sumArray(arr) {
+//   let result = arr.reduce((a, b) => a + b);
+//   return result;
+// }
+//2approach
+// function sumArray(arr) {
+//   let numbera = Number(arr.join(""));
+//   let sum = 0;
+//   while (numbera > 0) {
+//     let remainder = numbera % 10;
+//     sum = sum + remainder;
+//     numbera = Math.floor(numbera / 10);
+//   }
+//   return sum;
+// }
+
+// function sumArray(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// }
+console.log(sumArray([12, 24, 12]));
+
+function deepsumArray
