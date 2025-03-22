@@ -196,6 +196,15 @@ function countVowels(string) {
 //   }
 //   return sum;
 // }
-console.log(sumArray([12, 24, 12]));
+console.log(deepsumArray([12, 24, 12]));
 
-function deepsumArray
+function deepsumArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let numstring = arr[i].toString();
+    for (let j = 0; j < numstring.length; j++) {
+      sum += parseInt(numstring[j]);
+    }
+  }
+  return sum;
+}
