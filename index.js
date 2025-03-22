@@ -208,3 +208,22 @@ function deepsumArray(arr) {
   }
   return sum;
 }
+
+firstNonRepeatedCharacter("swiss"); // Output: "w"
+
+function firstNonRepeatedCharacter(string) {
+  let charcount = {};
+  for (let i = 0; i < string.length; i++) {
+    let char = string[i].toLowerCase();
+    charcount[char] = (charcount[char] || 0) + 1;
+  }
+
+  for (let i = 0; i < string.length; i++) {
+    let char = string[i].toLowerCase();
+    if (charcount[char] === 1) {
+      return string[i];
+    }
+  }
+  return null;
+}
+console.log(firstNonRepeatedCharacter("swiss"));
