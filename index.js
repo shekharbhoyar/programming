@@ -134,3 +134,15 @@ const reversestring = function (string) {
 reversestring("nagpur");
 reversestring("nayan");
 reversestring("mahi");
+
+const findLargestNumber = function (arr) {
+  let largest = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+};
+const result = findLargestNumber([2, 5, 8, 1, 9]); // Output: 9
+console.log(result);
