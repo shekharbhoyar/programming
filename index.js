@@ -146,3 +146,15 @@ const findLargestNumber = function (arr) {
 };
 const result = findLargestNumber([2, 5, 8, 1, 9]); // Output: 9
 console.log(result);
+
+const isPalindrome = function (string) {
+  let originalstring = string;
+  let revstring = string.split("").reverse().join("");
+  if (originalstring === revstring) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+};
+isPalindrome("madam"); // Output: true
+isPalindrome("hello"); // Output: false
