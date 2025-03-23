@@ -264,3 +264,18 @@ function stringrev(string) {
   return reverse;
 }
 console.log(stringrev("nagpur"));
+
+function stringpalindrome(string) {
+  let original = string;
+  let reverse = "";
+  for (let i = string.length - 1; i >= 0; i--) {
+    reverse += string[i];
+  }
+  const palindrome =
+    original === reverse
+      ? `${string} is palindrom`
+      : `${string} isn't palindrom`;
+  return palindrome;
+}
+console.log(stringpalindrome("nagpur"));
+console.log(stringpalindrome("madam"));
