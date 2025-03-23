@@ -244,10 +244,23 @@ console.log(findsmallestnumber(8, 3, 2));
 //Write a function that takes a number as input and returns true if it is even, otherwise false.
 
 function even(num) {
-  if (num % 2 === 0) {
-    return "true";
-  } else {
-    return "false";
-  }
+  // if (num % 2 === 0) {
+  //   return "true";
+  // } else {
+  //   return "false";
+  // }
+  return num % 2 === 0;
 }
-console.log(even(5));
+console.log(even(4));
+
+//Create a function that reverses a string without using .reverse().
+
+function stringrev(string) {
+  let arr = string.split("");
+  let reverse = "";
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reverse += arr[i];
+  }
+  return reverse;
+}
+console.log(stringrev("nagpur"));
