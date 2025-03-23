@@ -292,3 +292,29 @@ function bignumber(arr) {
   return largest;
 }
 console.log(bignumber([6, 2, 9, 10, 23, 61, 2, 37]));
+
+//Write a function to calculate the factorial of a number.
+
+function factorial(num) {
+  let factorial = 1;
+  for (let i = num; i > 0; i--) {
+    factorial *= i;
+  }
+  return factorial;
+}
+console.log(factorial(5));
+
+//Create a function that accepts a string and counts the number of vowels.
+
+function findvowels(string) {
+  let count = 0;
+  let vowels = "aeiou";
+  for (let i = 0; i < string.length; i++) {
+    if (vowels.includes(string[i]).toLowerCase()) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(findvowels("chandrashekhar"));
+console.log(findvowels("nayan"));
