@@ -227,3 +227,27 @@ function firstNonRepeatedCharacter(string) {
   return null;
 }
 console.log(firstNonRepeatedCharacter("swiss"));
+
+function findsmallestnumber(a, b, c) {
+  let numbers = [a, b, c];
+  let smallest = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < smallest) {
+      smallest = numbers[i];
+    }
+  }
+  return smallest;
+}
+console.log(findsmallestnumber(24, 12, 68));
+console.log(findsmallestnumber(8, 3, 2));
+
+//Write a function that takes a number as input and returns true if it is even, otherwise false.
+
+function even(num) {
+  if (num % 2 === 0) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(even(5));
