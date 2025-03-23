@@ -279,3 +279,16 @@ function stringpalindrome(string) {
 }
 console.log(stringpalindrome("nagpur"));
 console.log(stringpalindrome("madam"));
+
+//Find the largest number in an array.
+
+function bignumber(arr) {
+  let largest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+}
+console.log(bignumber([6, 2, 9, 10, 23, 61, 2, 37]));
