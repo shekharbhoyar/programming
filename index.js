@@ -359,11 +359,12 @@ function extractusername(string) {
   // return result;
   let username = "";
   for (let i = 0; i < string.length; i++) {
-    username += string[i];
     if (string[i] === "@") {
-      return username;
+      break;
     }
+    username += string[i];
   }
+  return username;
 }
 let email = "chandrabhoyar@gmail.com";
 console.log(extractusername(email));
