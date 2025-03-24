@@ -397,3 +397,17 @@ function duplicatecheck(arr) {
   return unique;
 }
 console.log(duplicatecheck("swiss"));
+//
+// Create a function that returns the Fibonacci sequence up to a given number.
+
+function fibonaccinum(num) {
+  let fibcollection = [];
+  if (num >= 1) fibcollection[0] = 0;
+  if (num >= 2) fibcollection[1] = 1;
+
+  for (let i = 2; i < num; i++) {
+    fibcollection[i] = fibcollection[i - 1] + fibcollection[i - 2];
+  }
+  return fibcollection;
+}
+console.log(fibonaccinum(-10));
