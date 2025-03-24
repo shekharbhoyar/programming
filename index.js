@@ -368,3 +368,32 @@ function extractusername(string) {
 }
 let email = "chandrabhoyar@gmail.com";
 console.log(extractusername(email));
+
+function checkleapyear(year) {
+  let result =
+    (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
+      ? `${year} is a leap year`
+      : `${year} isn't a leap year`;
+  return result;
+}
+console.log(checkleapyear(2000));
+
+//Write a function to remove duplicates from an array.
+
+function duplicatecheck(arr) {
+  let unique = [];
+  for (let i = 0; i < arr.length; i++) {
+    let isDuplicate = false;
+    for (let j = 0; j < unique.length; j++) {
+      if (arr[i] === unique[j]) {
+        isDuplicate = true;
+        break;
+      }
+    }
+    if (!isDuplicate) {
+      unique[unique.length] = arr[i];
+    }
+  }
+  return unique;
+}
+console.log(duplicatecheck("swiss"));
