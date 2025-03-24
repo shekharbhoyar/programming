@@ -344,3 +344,9 @@ function countchar(string, char) {
   return count;
 }
 console.log(countchar("nayan", "m"));
+
+function justcheak() {
+  return;
+}
+justcheak();
+// console.log(justcheak());
