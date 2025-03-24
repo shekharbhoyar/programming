@@ -310,7 +310,7 @@ function findvowels(string) {
   let count = 0;
   let vowels = "aeiou";
   for (let i = 0; i < string.length; i++) {
-    if (vowels.includes(string[i]).toLowerCase()) {
+    if (vowels.includes(string[i].toLowerCase())) {
       count++;
     }
   }
@@ -318,3 +318,16 @@ function findvowels(string) {
 }
 console.log(findvowels("chandrashekhar"));
 console.log(findvowels("nayan"));
+
+//Write a function that generates a random number between two given numbers.
+function genraterandomno(min, max) {
+  [min, max] = [max, min];
+  let randomseed = new Date().getTime();
+  console.log(randomseed);
+  let range = randomseed % (max - min + 1);
+  return min + range;
+}
+console.log(genraterandomno(7, 1));
+// console.log(genraterandomno(9, 3));
+// console.log(genraterandomno(9, 3));
+// console.log(genraterandomno(1, 3));
