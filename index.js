@@ -331,3 +331,16 @@ console.log(genraterandomno(7, 1));
 // console.log(genraterandomno(9, 3));
 // console.log(genraterandomno(9, 3));
 // console.log(genraterandomno(1, 3));
+
+//write a function which takes a string and char count char occurance
+
+function countchar(string, char) {
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === char) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countchar("nayan", "m"));
