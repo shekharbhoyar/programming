@@ -349,4 +349,21 @@ function justcheak() {
   return;
 }
 justcheak();
-// console.log(justcheak());
+// console.log(justcheak())
+
+// const string = "abcdefgh@gmail.com";
+// console.log(string.split("@")[0]);
+
+function extractusername(string) {
+  // const result = string.split("@")[0];
+  // return result;
+  let username = "";
+  for (let i = 0; i < string.length; i++) {
+    username += string[i];
+    if (string[i] === "@") {
+      return username;
+    }
+  }
+}
+let email = "chandrabhoyar@gmail.com";
+console.log(extractusername(email));
