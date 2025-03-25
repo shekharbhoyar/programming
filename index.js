@@ -367,7 +367,7 @@ function extractusername(string) {
   return username;
 }
 let email = "chandrabhoyar@gmail.com";
-console.log(extractusername(email));
+// console.log(extractusername(email));
 
 function checkleapyear(year) {
   let result =
@@ -376,86 +376,122 @@ function checkleapyear(year) {
       : `${year} isn't a leap year`;
   return result;
 }
-console.log(checkleapyear(2000));
+// console.log(checkleapyear(2000));
 
 //Write a function to remove duplicates from an array.
 
-function duplicatecheck(arr) {
-  let unique = [];
-  for (let i = 0; i < arr.length; i++) {
-    let isDuplicate = false;
-    for (let j = 0; j < unique.length; j++) {
-      if (arr[i] === unique[j]) {
-        isDuplicate = true;
-        break;
-      }
-    }
-    if (!isDuplicate) {
-      unique[unique.length] = arr[i];
-    }
-  }
-  return unique;
-}
-console.log(duplicatecheck("swiss"));
-//
-// Create a function that returns the Fibonacci sequence up to a given number.
-
-function fibonaccinum(num) {
-  let fibcollection = [];
-  if (num >= 1) fibcollection[0] = 0;
-  if (num >= 2) fibcollection[1] = 1;
-
-  for (let i = 2; i < num; i++) {
-    fibcollection[i] = fibcollection[i - 1] + fibcollection[i - 2];
-  }
-  return fibcollection;
-}
-console.log(fibonaccinum(10));
-
-//make pattern
-//*
-//**
-//***
-//****/
-// let numbers1 = 10;
-// let stars = "";
-// for (let i = 0; i < numbers1; i++) {
-//   stars += "*";
-//   console.log(stars);
+// function duplicatecheck(arr) {
+//   let unique = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let isDuplicate = false;
+//     for (let j = 0; j < unique.length; j++) {
+//       if (arr[i] === unique[j]) {
+//         isDuplicate = true;
+//         break;
+//       }
+//     }
+//     if (!isDuplicate) {
+//       unique[unique.length] = arr[i];
+//     }
+//   }
+//   return unique;
 // }
+// console.log(duplicatecheck("swiss"));
+// //
+// // Create a function that returns the Fibonacci sequence up to a given number.
 
-function printPattern(num) {
-  for (let i = num; i >= 1; i--) {
-    let stars = "";
-    for (let j = 1; j <= i; j++) {
-      stars += `${j}`;
+// function fibonaccinum(num) {
+//   let fibcollection = [];
+//   if (num >= 1) fibcollection[0] = 0;
+//   if (num >= 2) fibcollection[1] = 1;
+
+//   for (let i = 2; i < num; i++) {
+//     fibcollection[i] = fibcollection[i - 1] + fibcollection[i - 2];
+//   }
+//   return fibcollection;
+// }
+// console.log(fibonaccinum(10));
+
+// //make pattern
+// //*
+// //**
+// //***
+// //****/
+// // let numbers1 = 10;
+// // let stars = "";
+// // for (let i = 0; i < numbers1; i++) {
+// //   stars += "*";
+// //   console.log(stars);
+// // }
+
+// function printPattern(num) {
+//   for (let i = num; i >= 1; i--) {
+//     let stars = "";
+//     for (let j = 1; j <= i; j++) {
+//       stars += `${j}`;
+//     }
+//     console.log(stars);
+//   }
+// }
+// printPattern(4);
+
+// function printPattern1(num) {
+//   for (let i = 1; i <= num; i++) {
+//     let string = "";
+//     for (let j = 1; j <= i; j++) {
+//       string += `${j}`;
+//     }
+//     console.log(string);
+//   }
+// }
+// printPattern1(4);
+
+// // function printPattern2(num) {
+// //   for (let i = 0; i < num; i++) {
+// //     let str = "";
+// //     for (let k = 0; k < i; k++) {
+// //       str += " ";
+// //     }
+// //     for (let j = 0; j < num - i; j++) {
+// //       str += "*";
+// //     }
+// //     console.log(str);
+// //   }
+// // }
+// // printPattern2(4);
+
+// function printPattern2(num) {
+//   for (let i = 1; i <= num; i++) {
+//     let str = "";
+//     for (let k = 1; k <= num - i; k++) {
+//       str += " ";
+//     }
+//     for (let j = 1; j <= i; j++) {
+//       str += "*";
+//     }
+//     console.log(str);
+//   }
+// }
+// printPattern2(4);
+
+// function printPattern4(num) {
+//   for (let i = 1; i <= num; i++) {
+//     let str = "";
+//     for (let j = 0; j < i; j++) {
+//       str += "*";
+//     }
+//     console.log(str);
+//   }
+// }
+// printPattern4(4);
+
+function ascendingno(arr){
+  let ascend=[]
+  let largest=arr[0]
+  for(let i=0;i<arr.length;i++){
+    if(largest<arr[i]){
+      ascend[i]=arr[i]
+      largest=3
     }
-    console.log(stars);
   }
 }
-printPattern(4);
-
-function printPattern1(num) {
-  for (let i = 1; i <= num; i++) {
-    let string = "";
-    for (let j = 1; j <= i; j++) {
-      string += `${j}`;
-    }
-    console.log(string);
-  }
-}
-printPattern1(4);
-
-function printPattern2(num) {
-  for (let i = 1; i <= num; i++) {
-    let str = "";
-    for (let k = 1; k <= num - i; k++) {
-      str += " ";
-    }
-    for (let j = 1; j <= i; j++) {
-      str += "*";
-    }
-    console.log(str);
-  }
-}
-printPattern2(4);
