@@ -445,3 +445,17 @@ function printPattern1(num) {
   }
 }
 printPattern1(4);
+
+function printPattern2(num) {
+  for (let i = 1; i <= num; i++) {
+    let str = "";
+    for (let k = 1; k <= num - i; k++) {
+      str += " ";
+    }
+    for (let j = 1; j <= i; j++) {
+      str += "*";
+    }
+    console.log(str);
+  }
+}
+printPattern2(4);
