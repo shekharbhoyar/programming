@@ -410,4 +410,38 @@ function fibonaccinum(num) {
   }
   return fibcollection;
 }
-console.log(fibonaccinum(-10));
+console.log(fibonaccinum(10));
+
+//make pattern
+//*
+//**
+//***
+//****/
+// let numbers1 = 10;
+// let stars = "";
+// for (let i = 0; i < numbers1; i++) {
+//   stars += "*";
+//   console.log(stars);
+// }
+
+function printPattern(num) {
+  for (let i = num; i >= 1; i--) {
+    let stars = "";
+    for (let j = 1; j <= i; j++) {
+      stars += `${j}`;
+    }
+    console.log(stars);
+  }
+}
+printPattern(4);
+
+function printPattern1(num) {
+  for (let i = 1; i <= num; i++) {
+    let string = "";
+    for (let j = 1; j <= i; j++) {
+      string += `${j}`;
+    }
+    console.log(string);
+  }
+}
+printPattern1(4);
