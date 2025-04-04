@@ -644,9 +644,24 @@ if (amount2 >= 1) {
 //   sum += i;
 // }
 // console.log(sum);
-let num = 5;
-let fact = 1;
-for (let i = num; i >= 1; i--) {
-  fact *= i;
+// let num = 5;
+// let fact = 1;
+// for (let i = num; i >= 1; i--) {
+//   fact *= i;
+// }
+// console.log(fact);
+
+let num = 10;
+if (isNaN(num)) {
+  console.log("invalid input");
+} else {
+  if (num > 0) {
+    let sum = 0;
+    for (let i = 1; i <= num; i++) {
+      sum += i;
+    }
+    console.log(sum);
+  } else {
+    console.log("is negative and should be more than 0");
+  }
 }
-console.log(fact);
