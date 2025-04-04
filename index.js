@@ -485,13 +485,79 @@ function checkleapyear(year) {
 // }
 // printPattern4(4);
 
-function ascendingno(arr){
-  let ascend=[]
-  let largest=arr[0]
-  for(let i=0;i<arr.length;i++){
-    if(largest<arr[i]){
-      ascend[i]=arr[i]
-      largest=3
-    }
-  }
+// function ascendingno(arr){
+//   let ascend=[]
+//   let largest=arr[0]
+//   for(let i=0;i<arr.length;i++){
+//     if(largest<arr[i]){
+//       ascend[i]=arr[i]
+//       largest=3
+//     }
+//   }
+// }
+
+// let a = 0;
+// let b = 10;
+// let results = (a && b) || (b && a) || a || b;
+// console.log(results);
+
+let a = 10;
+let b = 20;
+// let c = a + b;
+// a = c - a;
+// b = c - b;
+// console.log(a, b);
+a = a + b;
+b = a - b;
+a = a - b;
+// console.log(a, b);
+// console.log("30" - 10);
+
+// console.log(Math.round(10.1));
+// console.log(Math.ceil(10.1));
+// console.log(Math.floor(10.9));
+// console.log(Math.trunc(11.9));
+// console.log(Math.random()); //generate number between 0-1
+// console.log(Math.sqrt(25));
+// console.log(Math.cbrt(8));
+// console.log(Math.pow(2, 3));
+// let i = 10.98765;
+// console.log(typeof i.toFixed(3));
+// console.log(Math.abs(-12));
+
+// //generate otp
+// console.log(Math.trunc(Math.random() * 9000 + 1000));
+
+// valid voter
+
+// let age = "sgshsgsh";
+// if (isNaN(age)) {
+//   console.log("wrong input");
+// } else if (age >= 18) {
+//   console.log("voter is valid voter");
+// } else {
+//   console.log("voter is invalid");
+// }
+
+//payable amount
+let amount = "fagsf";
+let dis = 0;
+if (amount < 0) {
+  amount = Math.abs(amount);
+  console.log(amount);
+}
+if (isNaN(amount)) {
+  console.log("wrong input");
+} else if (amount > 0 && amount <= 5000) {
+  dis = 0;
+  console.log(amount - Math.floor((dis * amount) / 100));
+} else if (amount > 5000 && amount <= 7000) {
+  dis = 5;
+  console.log(amount - Math.floor((dis * amount) / 100));
+} else if (amount > 7000 && amount <= 9000) {
+  dis = 10;
+  console.log(amount - Math.floor((dis * amount) / 100));
+} else if (amount > 9000) {
+  dis = 20;
+  console.log(amount - Math.floor((dis * amount) / 100));
 }
