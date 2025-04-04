@@ -622,3 +622,10 @@ if (amount2 >= 2) {
 if (amount2 >= 1) {
   console.log("No of 1 rupees notes -- " + amount2);
 }
+
+// ternary operator
+
+let num = -19;
+
+let results = num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+console.log(results);
