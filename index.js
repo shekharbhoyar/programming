@@ -582,3 +582,43 @@ if (unit > 0 && unit <= 100) {
   unit = 0;
 }
 console.log(amount1);
+
+//INR Denomination
+
+let amount2 = 510;
+
+if (amount2 >= 500) {
+  console.log("No of 500 notes -- " + Math.floor(amount2 / 500));
+  amount2 = amount2 % 500;
+}
+if (amount2 >= 200) {
+  console.log("No of 200 rupees notes -- " + Math.floor(amount2 / 200));
+  amount2 = amount2 % 200;
+}
+if (amount2 >= 100) {
+  console.log("No of 100 rupees notes -- " + Math.floor(amount2 / 100));
+  amount2 = amount2 % 100;
+}
+if (amount2 >= 50) {
+  console.log("No of 50 rupees notes -- " + Math.floor(amount2 / 50));
+  amount2 = amount2 % 50;
+}
+if (amount2 >= 20) {
+  console.log("No of 20  rupees notes -- " + Math.floor(amount2 / 20));
+  amount2 = amount2 % 20;
+}
+if (amount2 >= 10) {
+  console.log("No of 10 rupees notes -- " + Math.floor(amount2 / 10));
+  amount2 = amount2 % 10;
+}
+if (amount2 >= 5) {
+  console.log("No of 5 rupees notes -- " + Math.floor(amount2 / 5));
+  amount2 = amount2 % 5;
+}
+if (amount2 >= 2) {
+  console.log("No of 2 rupees notes -- " + Math.floor(amount2 / 2));
+  amount2 = amount2 % 2;
+}
+if (amount2 >= 1) {
+  console.log("No of 1 rupees notes -- " + amount2);
+}
