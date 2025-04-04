@@ -625,7 +625,16 @@ if (amount2 >= 1) {
 
 // ternary operator
 
-let num = -19;
+// let num = -19;
 
-let results = num > 0 ? "positive" : num < 0 ? "negative" : "zero";
-console.log(results);
+// let results = num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+// console.log(results);
+
+// for (let i = 1; i < 10; i++) {
+//   console.log(i);
+// }
+// console.log(i);
+
+for (let i = 10; i >= 1; i--) {
+  console.log(i);
+}
