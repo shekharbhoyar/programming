@@ -635,6 +635,12 @@ if (amount2 >= 1) {
 // }
 // console.log(i);
 
-for (let i = 10; i >= 1; i--) {
-  console.log(i);
+// for (let i = 10; i >= 1; i--) {
+//   console.log(i);
+// }
+let number = 10;
+let sum = 0;
+for (let i = 1; i <= number; i++) {
+  sum += i;
 }
+console.log(sum);
