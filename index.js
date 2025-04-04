@@ -638,9 +638,15 @@ if (amount2 >= 1) {
 // for (let i = 10; i >= 1; i--) {
 //   console.log(i);
 // }
-let number = 10;
-let sum = 0;
-for (let i = 1; i <= number; i++) {
-  sum += i;
+// let number = 10;
+// let sum = 0;
+// for (let i = 1; i <= number; i++) {
+//   sum += i;
+// }
+// console.log(sum);
+let num = 5;
+let fact = 1;
+for (let i = num; i >= 1; i--) {
+  fact *= i;
 }
-console.log(sum);
+console.log(fact);
