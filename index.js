@@ -561,3 +561,24 @@ if (isNaN(amount)) {
   dis = 20;
   console.log(amount - Math.floor((dis * amount) / 100));
 }
+
+// electricity bill
+let unit = 700;
+let amount1 = 0;
+if (unit > 400) {
+  amount1 = (unit - 400) * 13; //3900
+  unit = 400;
+}
+if (unit > 200 && unit <= 400) {
+  amount1 += (unit - 200) * 8; //1000
+  unit = 200;
+}
+if (unit > 100 && unit <= 200) {
+  amount1 += (unit - 100) * 6; //600
+  unit = 100;
+}
+if (unit > 0 && unit <= 100) {
+  amount1 += unit * 4.2; //420
+  unit = 0;
+}
+console.log(amount1);
