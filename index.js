@@ -651,17 +651,33 @@ if (amount2 >= 1) {
 // }
 // console.log(fact);
 
-let num = 10;
+// let num = 10;
+// if (isNaN(num)) {
+//   console.log("invalid input");
+// } else {
+//   if (num > 0) {
+//     let sum = 0;
+//     for (let i = 1; i <= num; i++) {
+//       sum += i;
+//     }
+//     console.log(sum);
+//   } else {
+//     console.log("is negative and should be more than 0");
+//   }
+// }
+
+let num = 12;
 if (isNaN(num)) {
   console.log("invalid input");
 } else {
   if (num > 0) {
-    let sum = 0;
-    for (let i = 1; i <= num; i++) {
-      sum += i;
+    for (let i = 1; i <= Math.floor(num / 2); i++) {
+      if (num % i === 0) {
+        console.log(i);
+      }
     }
-    console.log(sum);
+    console.log(num);
   } else {
-    console.log("is negative and should be more than 0");
+    console.log("num is negative it should be more than 0");
   }
 }
