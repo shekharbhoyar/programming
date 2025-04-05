@@ -563,121 +563,153 @@ if (isNaN(amount)) {
 }
 
 // electricity bill
-let unit = 700;
-let amount1 = 0;
-if (unit > 400) {
-  amount1 = (unit - 400) * 13; //3900
-  unit = 400;
-}
-if (unit > 200 && unit <= 400) {
-  amount1 += (unit - 200) * 8; //1000
-  unit = 200;
-}
-if (unit > 100 && unit <= 200) {
-  amount1 += (unit - 100) * 6; //600
-  unit = 100;
-}
-if (unit > 0 && unit <= 100) {
-  amount1 += unit * 4.2; //420
-  unit = 0;
-}
-console.log(amount1);
-
-//INR Denomination
-
-let amount2 = 510;
-
-if (amount2 >= 500) {
-  console.log("No of 500 notes -- " + Math.floor(amount2 / 500));
-  amount2 = amount2 % 500;
-}
-if (amount2 >= 200) {
-  console.log("No of 200 rupees notes -- " + Math.floor(amount2 / 200));
-  amount2 = amount2 % 200;
-}
-if (amount2 >= 100) {
-  console.log("No of 100 rupees notes -- " + Math.floor(amount2 / 100));
-  amount2 = amount2 % 100;
-}
-if (amount2 >= 50) {
-  console.log("No of 50 rupees notes -- " + Math.floor(amount2 / 50));
-  amount2 = amount2 % 50;
-}
-if (amount2 >= 20) {
-  console.log("No of 20  rupees notes -- " + Math.floor(amount2 / 20));
-  amount2 = amount2 % 20;
-}
-if (amount2 >= 10) {
-  console.log("No of 10 rupees notes -- " + Math.floor(amount2 / 10));
-  amount2 = amount2 % 10;
-}
-if (amount2 >= 5) {
-  console.log("No of 5 rupees notes -- " + Math.floor(amount2 / 5));
-  amount2 = amount2 % 5;
-}
-if (amount2 >= 2) {
-  console.log("No of 2 rupees notes -- " + Math.floor(amount2 / 2));
-  amount2 = amount2 % 2;
-}
-if (amount2 >= 1) {
-  console.log("No of 1 rupees notes -- " + amount2);
-}
-
-// ternary operator
-
-// let num = -19;
-
-// let results = num > 0 ? "positive" : num < 0 ? "negative" : "zero";
-// console.log(results);
-
-// for (let i = 1; i < 10; i++) {
-//   console.log(i);
+// let unit = 700;
+// let amount1 = 0;
+// if (unit > 400) {
+//   amount1 = (unit - 400) * 13; //3900
+//   unit = 400;
 // }
-// console.log(i);
+// if (unit > 200 && unit <= 400) {
+//   amount1 += (unit - 200) * 8; //1000
+//   unit = 200;
+// }
+// if (unit > 100 && unit <= 200) {
+//   amount1 += (unit - 100) * 6; //600
+//   unit = 100;
+// }
+// if (unit > 0 && unit <= 100) {
+//   amount1 += unit * 4.2; //420
+//   unit = 0;
+// }
+// console.log(amount1);
 
-// for (let i = 10; i >= 1; i--) {
-//   console.log(i);
-// }
-// let number = 10;
-// let sum = 0;
-// for (let i = 1; i <= number; i++) {
-//   sum += i;
-// }
-// console.log(sum);
-// let num = 5;
-// let fact = 1;
-// for (let i = num; i >= 1; i--) {
-//   fact *= i;
-// }
-// console.log(fact);
+// //INR Denomination
 
-// let num = 10;
+// let amount2 = 510;
+
+// if (amount2 >= 500) {
+//   console.log("No of 500 notes -- " + Math.floor(amount2 / 500));
+//   amount2 = amount2 % 500;
+// }
+// if (amount2 >= 200) {
+//   console.log("No of 200 rupees notes -- " + Math.floor(amount2 / 200));
+//   amount2 = amount2 % 200;
+// }
+// if (amount2 >= 100) {
+//   console.log("No of 100 rupees notes -- " + Math.floor(amount2 / 100));
+//   amount2 = amount2 % 100;
+// }
+// if (amount2 >= 50) {
+//   console.log("No of 50 rupees notes -- " + Math.floor(amount2 / 50));
+//   amount2 = amount2 % 50;
+// }
+// if (amount2 >= 20) {
+//   console.log("No of 20  rupees notes -- " + Math.floor(amount2 / 20));
+//   amount2 = amount2 % 20;
+// }
+// if (amount2 >= 10) {
+//   console.log("No of 10 rupees notes -- " + Math.floor(amount2 / 10));
+//   amount2 = amount2 % 10;
+// }
+// if (amount2 >= 5) {
+//   console.log("No of 5 rupees notes -- " + Math.floor(amount2 / 5));
+//   amount2 = amount2 % 5;
+// }
+// if (amount2 >= 2) {
+//   console.log("No of 2 rupees notes -- " + Math.floor(amount2 / 2));
+//   amount2 = amount2 % 2;
+// }
+// if (amount2 >= 1) {
+//   console.log("No of 1 rupees notes -- " + amount2);
+// }
+
+// // ternary operator
+
+// // let num = -19;
+
+// // let results = num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+// // console.log(results);
+
+// // for (let i = 1; i < 10; i++) {
+// //   console.log(i);
+// // }
+// // console.log(i);
+
+// // for (let i = 10; i >= 1; i--) {
+// //   console.log(i);
+// // }
+// // let number = 10;
+// // let sum = 0;
+// // for (let i = 1; i <= number; i++) {
+// //   sum += i;
+// // }
+// // console.log(sum);
+// // let num = 5;
+// // let fact = 1;
+// // for (let i = num; i >= 1; i--) {
+// //   fact *= i;
+// // }
+// // console.log(fact);
+
+// // let num = 10;
+// // if (isNaN(num)) {
+// //   console.log("invalid input");
+// // } else {
+// //   if (num > 0) {
+// //     let sum = 0;
+// //     for (let i = 1; i <= num; i++) {
+// //       sum += i;
+// //     }
+// //     console.log(sum);
+// //   } else {
+// //     console.log("is negative and should be more than 0");
+// //   }
+// // }
+
+// let num = 12;
 // if (isNaN(num)) {
 //   console.log("invalid input");
 // } else {
 //   if (num > 0) {
-//     let sum = 0;
-//     for (let i = 1; i <= num; i++) {
-//       sum += i;
+//     for (let i = 1; i <= Math.floor(num / 2); i++) {
+//       if (num % i === 0) {
+//         console.log(i);
+//       }
 //     }
-//     console.log(sum);
+//     console.log(num);
 //   } else {
-//     console.log("is negative and should be more than 0");
+//     console.log("num is negative it should be more than 0");
 //   }
 // }
 
-let num = 12;
-if (isNaN(num)) {
-  console.log("invalid input");
-} else {
-  if (num > 0) {
-    for (let i = 1; i <= Math.floor(num / 2); i++) {
-      if (num % i === 0) {
-        console.log(i);
-      }
-    }
-    console.log(num);
-  } else {
-    console.log("num is negative it should be more than 0");
+let count = 0;
+let sum = 0;
+for (let i = 0; i <= 100; i++) {
+  if (i % 2 === 0) {
+    sum += i;
+    count++;
+  }
+  if (count === 11) {
+    break;
   }
 }
+// console.log(sum);
+
+let sum1 = 0;
+let num = 100;
+let count1 = 0;
+for (let i = 0; i <= num; i += 2) {
+  sum1 += i;
+  count1++;
+  if (count1 === 11) break;
+}
+console.log(sum1);
+
+let count2 = 0;
+let sum2 = 0;
+for (let i = 1; i <= 100; i += 2) {
+  sum2 += i;
+  count2++;
+  if (count2 === 10) break;
+}
+console.log(sum2);
