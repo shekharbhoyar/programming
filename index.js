@@ -682,34 +682,68 @@ if (isNaN(amount)) {
 //   }
 // }
 
-let count = 0;
+// let count = 0;
+// let sum = 0;
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     sum += i;
+//     count++;
+//   }
+//   if (count === 11) {
+//     break;
+//   }
+// }
+// // console.log(sum);
+
+// let sum1 = 0;
+// let num = 100;
+// let count1 = 0;
+// for (let i = 0; i <= num; i += 2) {
+//   sum1 += i;
+//   count1++;
+//   if (count1 === 11) break;
+// }
+// // console.log(sum1);
+
+// let count2 = 0;
+// let sum2 = 0;
+// for (let i = 1; i <= 100; i += 2) {
+//   sum2 += i;
+//   count2++;
+//   if (count2 === 10) break;
+// }
+// // console.log(sum2);
+
+//find sum of digit
+
+let num = 1234;
 let sum = 0;
+
 for (let i = 0; i <= 100; i++) {
-  if (i % 2 === 0) {
-    sum += i;
-    count++;
+  let rem = num % 10;
+  if (rem === 0) break;
+  sum += rem;
+  num = Math.floor(num / 10);
+}
+console.log(sum);
+
+//factors of numbers
+let num1 = 10;
+for (let i = 1; i <= Math.floor(num1 / 2); i++) {
+  if (num1 % i === 0) {
+    console.log(i);
   }
-  if (count === 11) {
+}
+console.log(num1);
+
+//number is prime or not?
+
+let num2 = 16;
+let primehai = true;
+for (let i = 2; i <= Math.sqrt(num2); i++) {
+  if (num2 % i === 0) {
+    primehai = false;
     break;
   }
 }
-// console.log(sum);
-
-let sum1 = 0;
-let num = 100;
-let count1 = 0;
-for (let i = 0; i <= num; i += 2) {
-  sum1 += i;
-  count1++;
-  if (count1 === 11) break;
-}
-console.log(sum1);
-
-let count2 = 0;
-let sum2 = 0;
-for (let i = 1; i <= 100; i += 2) {
-  sum2 += i;
-  count2++;
-  if (count2 === 10) break;
-}
-console.log(sum2);
+console.log(primehai);
