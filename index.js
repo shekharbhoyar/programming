@@ -746,4 +746,35 @@ for (let i = 2; i <= Math.sqrt(num2); i++) {
     break;
   }
 }
-console.log(primehai);
+// console.log(primehai);
+
+function isPrime(num) {
+  if (num <= 1) return false;
+  if (num === 2) return true;
+  if (num % 2 === 0) return false;
+  for (let i = 3; i <= Math.floor(Math.sqrt(num)); i += 2) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+console.log(isPrime(17));
+
+console.log(isPrime(10));
+
+console.log(isPrime(19));
+
+console.log(isPrime(5));
+
+console.log(isPrime(16));
+
+//sum of digit
+
+var add = 0;
+var num5 = 94736241;//36
+while (num5 > 0) {
+  let rem = num5 % 10;
+  add += rem;
+  num5 = Math.floor(num5 / 10);
+}
+console.log(add);
