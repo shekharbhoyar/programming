@@ -771,10 +771,21 @@ console.log(isPrime(16));
 //sum of digit
 
 var add = 0;
-var num5 = 94736241;//36
+var num5 = 94736241; //36
 while (num5 > 0) {
   let rem = num5 % 10;
   add += rem;
   num5 = Math.floor(num5 / 10);
 }
 console.log(add);
+
+//reverse number
+
+var rev = 0;
+var num5 = 94736241; //14263749
+while (num5 > 0) {
+  let rem = num5 % 10;
+  rev = rev * 10 + rem;
+  num5 = Math.floor(num5 / 10);
+}
+console.log(rev);
