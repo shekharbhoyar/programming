@@ -853,4 +853,16 @@ for (let i = 0; i < arr1.length; i++) {
     max = arr1[i];
   }
 }
-console.log(max);//45
+// console.log(max);//45
+let max1 = Math.max(arr1[0], arr1[1]);
+let sMax1 = Math.min(arr1[0], arr1[1]);
+for (let i = 2; i < arr1.length; i++) {
+  if (max1 < arr1[i]) {
+    sMax1 = max1;
+    max1 = arr1[i];
+  } else if (sMax1 < arr1[i] && max1 !== arr1[i]) {
+    sMax1 = arr1[i];
+  }
+}
+console.log(sMax1);
+console.log(max1);
