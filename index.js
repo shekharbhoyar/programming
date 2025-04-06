@@ -777,15 +777,52 @@ while (num5 > 0) {
   add += rem;
   num5 = Math.floor(num5 / 10);
 }
-console.log(add);
+// console.log(add);
 
 //reverse number
 
-var rev = 0;
-var num5 = 94736241; //14263749
-while (num5 > 0) {
-  let rem = num5 % 10;
-  rev = rev * 10 + rem;
-  num5 = Math.floor(num5 / 10);
-}
-console.log(rev);
+// var rev = 0;
+// var num5 = 94736241; //14263749
+// while (num5 > 0) {
+//   let rem = num5 % 10;
+//   rev = rev * 10 + rem;
+//   num5 = Math.floor(num5 / 10);
+// }
+// console.log(rev);
+
+//1.ghar aao
+//2.gate kholo aur lagao
+//3.khana pakao
+//4.khana khalo
+//5.so jao
+
+let ans = new Promise((res, rej) => {
+  return res("ghar aao");
+});
+let p2 = ans.then((data) => {
+  console.log(data);
+  return new Promise((res, rej) => {
+    return res("gate kholo aur lagao");
+  });
+});
+let p3 = p2.then((data) => {
+  console.log(data);
+  return new Promise((res, rej) => {
+    return res("khana pakao");
+  });
+});
+let p4 = p3.then((data) => {
+  console.log(data);
+  return new Promise((res, rej) => {
+    return res("khana khao");
+  });
+});
+let p5 = p4.then((data) => {
+  console.log(data);
+  return new Promise((res, rej) => {
+    return res("so jao");
+  });
+});
+let p6 = p5.then((data) => {
+  console.log(data);
+});
