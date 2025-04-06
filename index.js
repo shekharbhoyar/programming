@@ -796,33 +796,61 @@ while (num5 > 0) {
 //4.khana khalo
 //5.so jao
 
-let ans = new Promise((res, rej) => {
-  return res("ghar aao");
-});
-let p2 = ans.then((data) => {
-  console.log(data);
-  return new Promise((res, rej) => {
-    return res("gate kholo aur lagao");
-  });
-});
-let p3 = p2.then((data) => {
-  console.log(data);
-  return new Promise((res, rej) => {
-    return res("khana pakao");
-  });
-});
-let p4 = p3.then((data) => {
-  console.log(data);
-  return new Promise((res, rej) => {
-    return res("khana khao");
-  });
-});
-let p5 = p4.then((data) => {
-  console.log(data);
-  return new Promise((res, rej) => {
-    return res("so jao");
-  });
-});
-let p6 = p5.then((data) => {
-  console.log(data);
-});
+// let ans = new Promise((res, rej) => {
+//   return res("ghar aao");
+// });
+// let p2 = ans.then((data) => {
+//   console.log(data);
+//   return new Promise((res, rej) => {
+//     return res("gate kholo aur lagao");
+//   });
+// });
+// let p3 = p2.then((data) => {
+//   console.log(data);
+//   return new Promise((res, rej) => {
+//     return res("khana pakao");
+//   });
+// });
+// let p4 = p3.then((data) => {
+//   console.log(data);
+//   return new Promise((res, rej) => {
+//     return res("khana khao");
+//   });
+// });
+// let p5 = p4.then((data) => {
+//   console.log(data);
+//   return new Promise((res, rej) => {
+//     return res("so jao");
+//   });
+// });
+// let p6 = p5.then((data) => {
+//   console.log(data);
+// });
+
+// let arr1 = new Array(3);
+// arr1.push(30);
+// console.log(arr1);
+
+// arr1[0] = 10;
+// console.log(arr1);
+// arr1[1] = 20;
+// console.log(arr1);
+// arr1[2] = 30;
+// console.log(arr1);
+
+// let arr1 = [10, 20, 30, 40, 50];
+// let sum1 = 0;
+// for (let i = 0; i < arr1.length; i++) {
+//   sum1 += arr1[i];
+//   // console.log(sum1);
+// }
+// console.log(sum1);
+
+let arr1 = [2, 17, 28, 35, 10, 45, 26];
+let max = arr1[0];
+for (let i = 0; i < arr1.length; i++) {
+  if (max < arr1[i]) {
+    max = arr1[i];
+  }
+}
+console.log(max);//45
