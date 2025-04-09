@@ -901,12 +901,26 @@ for (let i = 2; i < arr1.length; i++) {
 // }
 // console.log(arr2);
 
-let aRR = [1, -2, 6, -1, -8, 28, 12, -27, 20, 39, -25];
+// let aRR = [1, -2, 6, -1, -8, 28, 12, -27, 20, 39, -25];
 
+// let i = 0,
+//   j = 0;
+// while (i < aRR.length) {
+//   if (aRR[i] < 0) {
+//     let temp = aRR[i];
+//     aRR[i] = aRR[j];
+//     aRR[j] = temp;
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(aRR);
+
+let aRR = ["aman", 10, 20, "sumit", 45, "w", 12, 1, "s"];
 let i = 0,
   j = 0;
 while (i < aRR.length) {
-  if (aRR[i] < 0) {
+  if (typeof aRR[i] === "string") {
     let temp = aRR[i];
     aRR[i] = aRR[j];
     aRR[j] = temp;
