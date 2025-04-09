@@ -887,18 +887,31 @@ for (let i = 2; i < arr1.length; i++) {
 // }
 // console.log(arr2);
 
-let arr2 = [1, 1, 0, 1, 0, 0, 1, 0, 1, 1];
+// let arr2 = [1, 1, 0, 1, 0, 0, 1, 0, 1, 1];
+// let i = 0,
+//   j = 0;
+// while (i < arr2.length) {
+//   if (arr2[i] === 1) {
+//     let temp = arr2[i];
+//     arr2[i] = arr2[j];
+//     arr2[j] = temp;
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr2);
+
+let aRR = [1, -2, 6, -1, -8, 28, 12, -27, 20, 39, -25];
+
 let i = 0,
   j = 0;
-while (i < arr2.length) {
-  if (arr2[i] === 1) {
-    let temp = arr2[i];
-    arr2[i] = arr2[j];
-    arr2[j] = temp;
+while (i < aRR.length) {
+  if (aRR[i] < 0) {
+    let temp = aRR[i];
+    aRR[i] = aRR[j];
+    aRR[j] = temp;
     j++;
   }
   i++;
 }
-console.log(arr2);
-
-
+console.log(aRR);
