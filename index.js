@@ -864,5 +864,25 @@ for (let i = 2; i < arr1.length; i++) {
     sMax1 = arr1[i];
   }
 }
-console.log(sMax1);
-console.log(max1);
+// console.log(sMax1);
+// console.log(max1);
+
+// let arr2 = [20, 10, 38, 48, 25, 30];
+// let temp = new Array(arr2.length);
+// let j = 0;
+// for (let i = arr2.length - 1; i >= 0; i--) {
+//   temp[j] = arr2[i];
+//   j++;
+// }
+// console.log(temp);
+let arr2 = [20, 10, 38, 48, 25, 30];
+let i = 0;
+let j = arr2.length - 1;
+while (i < j) {
+  let temp = arr2[i];
+  arr2[i] = arr2[j];
+  arr2[j] = temp;
+  i++;
+  j--;
+}
+console.log(arr2);
