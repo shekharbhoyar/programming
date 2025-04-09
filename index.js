@@ -875,14 +875,30 @@ for (let i = 2; i < arr1.length; i++) {
 //   j++;
 // }
 // console.log(temp);
-let arr2 = [20, 10, 38, 48, 25, 30];
-let i = 0;
-let j = arr2.length - 1;
-while (i < j) {
-  let temp = arr2[i];
-  arr2[i] = arr2[j];
-  arr2[j] = temp;
+// let arr2 = [20, 10, 38, 48, 25, 30];
+// let i = 0;
+// let j = arr2.length - 1;
+// while (i < j) {
+//   let temp = arr2[i];
+//   arr2[i] = arr2[j];
+//   arr2[j] = temp;
+//   i++;
+//   j--;
+// }
+// console.log(arr2);
+
+let arr2 = [1, 1, 0, 1, 0, 0, 1, 0, 1, 1];
+let i = 0,
+  j = 0;
+while (i < arr2.length) {
+  if (arr2[i] === 1) {
+    let temp = arr2[i];
+    arr2[i] = arr2[j];
+    arr2[j] = temp;
+    j++;
+  }
   i++;
-  j--;
 }
 console.log(arr2);
+
+
