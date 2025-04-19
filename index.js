@@ -540,27 +540,27 @@ a = a - b;
 // }
 
 //payable amount
-let amount = "fagsf";
-let dis = 0;
-if (amount < 0) {
-  amount = Math.abs(amount);
-  console.log(amount);
-}
-if (isNaN(amount)) {
-  console.log("wrong input");
-} else if (amount > 0 && amount <= 5000) {
-  dis = 0;
-  console.log(amount - Math.floor((dis * amount) / 100));
-} else if (amount > 5000 && amount <= 7000) {
-  dis = 5;
-  console.log(amount - Math.floor((dis * amount) / 100));
-} else if (amount > 7000 && amount <= 9000) {
-  dis = 10;
-  console.log(amount - Math.floor((dis * amount) / 100));
-} else if (amount > 9000) {
-  dis = 20;
-  console.log(amount - Math.floor((dis * amount) / 100));
-}
+// let amount = "fagsf";
+// let dis = 0;
+// if (amount < 0) {
+//   amount = Math.abs(amount);
+//   console.log(amount);
+// }
+// if (isNaN(amount)) {
+//   console.log("wrong input");
+// } else if (amount > 0 && amount <= 5000) {
+//   dis = 0;
+//   console.log(amount - Math.floor((dis * amount) / 100));
+// } else if (amount > 5000 && amount <= 7000) {
+//   dis = 5;
+//   console.log(amount - Math.floor((dis * amount) / 100));
+// } else if (amount > 7000 && amount <= 9000) {
+//   dis = 10;
+//   console.log(amount - Math.floor((dis * amount) / 100));
+// } else if (amount > 9000) {
+//   dis = 20;
+//   console.log(amount - Math.floor((dis * amount) / 100));
+// }
 
 // electricity bill
 // let unit = 700;
@@ -725,7 +725,7 @@ for (let i = 0; i <= 100; i++) {
   sum += rem;
   num = Math.floor(num / 10);
 }
-console.log(sum);
+// console.log(sum);
 
 //factors of numbers
 let num1 = 10;
@@ -734,7 +734,7 @@ for (let i = 1; i <= Math.floor(num1 / 2); i++) {
     console.log(i);
   }
 }
-console.log(num1);
+// console.log(num1);
 
 //number is prime or not?
 
@@ -758,15 +758,15 @@ function isPrime(num) {
   return true;
 }
 
-console.log(isPrime(17));
+// console.log(isPrime(17));
 
-console.log(isPrime(10));
+// console.log(isPrime(10));
 
-console.log(isPrime(19));
+// console.log(isPrime(19));
 
-console.log(isPrime(5));
+// console.log(isPrime(5));
 
-console.log(isPrime(16));
+// console.log(isPrime(16));
 
 //sum of digit
 
@@ -846,24 +846,24 @@ while (num5 > 0) {
 // }
 // console.log(sum1);
 
-let arr1 = [2, 17, 28, 35, 10, 45, 26];
-let max = arr1[0];
-for (let i = 0; i < arr1.length; i++) {
-  if (max < arr1[i]) {
-    max = arr1[i];
-  }
-}
+// let arr1 = [2, 17, 28, 35, 10, 45, 26];
+// let max = arr1[0];
+// for (let i = 0; i < arr1.length; i++) {
+//   if (max < arr1[i]) {
+//     max = arr1[i];
+//   }
+// }
 // console.log(max);//45
-let max1 = Math.max(arr1[0], arr1[1]);
-let sMax1 = Math.min(arr1[0], arr1[1]);
-for (let i = 2; i < arr1.length; i++) {
-  if (max1 < arr1[i]) {
-    sMax1 = max1;
-    max1 = arr1[i];
-  } else if (sMax1 < arr1[i] && max1 !== arr1[i]) {
-    sMax1 = arr1[i];
-  }
-}
+// let max1 = Math.max(arr1[0], arr1[1]);
+// let sMax1 = Math.min(arr1[0], arr1[1]);
+// for (let i = 2; i < arr1.length; i++) {
+//   if (max1 < arr1[i]) {
+//     sMax1 = max1;
+//     max1 = arr1[i];
+//   } else if (sMax1 < arr1[i] && max1 !== arr1[i]) {
+//     sMax1 = arr1[i];
+//   }
+// }
 // console.log(sMax1);
 // console.log(max1);
 
@@ -916,16 +916,19 @@ for (let i = 2; i < arr1.length; i++) {
 // }
 // console.log(aRR);
 
-let aRR = ["aman", 10, 20, "sumit", 45, "w", 12, 1, "s"];
-let i = 0,
-  j = 0;
-while (i < aRR.length) {
-  if (typeof aRR[i] === "string") {
-    let temp = aRR[i];
-    aRR[i] = aRR[j];
-    aRR[j] = temp;
-    j++;
-  }
-  i++;
-}
-console.log(aRR);
+// let aRR = ["aman", 10, 20, "sumit", 45, "w", 12, 1, "s"];
+// let i = 0,
+//   j = 0;
+// while (i < aRR.length) {
+//   if (typeof aRR[i] === "string") {
+//     let temp = aRR[i];
+//     aRR[i] = aRR[j];
+//     aRR[j] = temp;
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(aRR);
+let x = [];
+let y = [];
+console.log(x === y);
