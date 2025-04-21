@@ -929,6 +929,136 @@ while (num5 > 0) {
 //   i++;
 // }
 // console.log(aRR);
-let x = [];
-let y = [];
-console.log(x === y);
+// let x = [];
+// let y = [];
+// console.log(x === y);
+
+// class stack {
+//   #item;
+//   constructor() {
+//     this.#item = [];
+//   }
+//   pushh(item) {
+//     this.#item.push(item);
+//   }
+//   popp() {
+//     return this.#item.pop();
+//   }
+//   getstack() {
+//     return this.#item;
+//   }
+// }
+// const mystack = new stack();
+
+// mystack.pushh(20);
+// console.log(mystack.getstack());
+
+// class mystack1 extends stack{
+
+//  constructor(){
+//   super()
+
+//  }
+
+// }
+
+class Car {
+  #color;
+  #model;
+  #year;
+  #speed;
+  constructor(color, model, year, speed) {
+    this.#color = color;
+    this.#model = model;
+    this.#year = year;
+    this.#speed = speed;
+  }
+  break() {
+    if (this.#speed === 0) {
+      console.log("car is already stopped");
+    } else {
+      this.#speed -= 10;
+      if (this.#speed < 0) this.#speed = 0;
+      console.log(`braking..cureent speed is:${this.#speed}kmph`);
+    }
+  }
+  accelerate() {
+    this.#speed += 10;
+    console.log(`accelerating.. current speed is:${this.#speed}kmph`);
+  }
+  currentspeed() {
+    console.log(`current speed is:${this.#speed}kmph`);
+  }
+
+  getspeed() {
+    return this.#speed;
+  }
+  setspeed(newspeed) {
+    if (newspeed >= 0) {
+      this.#speed = newspeed;
+    } else {
+      console.log("gspeed cant be negative");
+    }
+  }
+}
+
+const car1 = new Car("red", "as36", 2025, 25);
+
+class ElectricCar extends Car {
+  #batterylevel;
+  constructor(color, model, year, speed = 0, batterypercentage = 100) {
+    super(color, model, year, speed);
+    this.#batterylevel = batterypercentage;
+  }
+  accelerate() {
+    if (this.#batterylevel <= 0) {
+      console.log("please charge the battery");
+    } else {
+      this.#batterylevel -= 5;
+      super.accelerate();
+      console.log("car is running");
+    }
+  }
+  chargebattery(amount) {
+    if (amount === 100) {
+      console.log("battery is fully charged");
+    } else if (amount < 100 && amount > 0) {
+      this.#batterylevel = amount;
+    }
+  }
+  getBatteryLevel() {
+    console.log(`Current battery level: ${this.#batterylevel}%`);
+  }
+}
+
+const ev = new ElectricCar("black", "Tesla", 2025, 100, 50);
+
+class Bank {
+  #name;
+  #accountno;
+  #balance;
+  constructor(name, accountno, balance) {
+    this.#name = name;
+    this.#accountno = accountno;
+    this.#balance = balance;
+  }
+  getbalance() {
+    return this.#balance;
+  }
+  setbalance(balance) {
+    this.#balance = balance;
+    return this.#balance;
+  }
+  getname() {
+    return this.#name;
+  }
+  setname(name) {
+    this.#name = name;
+    return this.#name;
+  }
+}
+const customer1 = new Bank("chandu", "ASDEF1", 25000);
+console.log(customer1.getname());
+console.log(customer1.getbalance());
+console.log(customer1.setbalance(50000));
+console.log(customer1.getbalance());
