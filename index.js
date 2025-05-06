@@ -1057,8 +1057,21 @@ class Bank {
     return this.#name;
   }
 }
-const customer1 = new Bank("chandu", "ASDEF1", 25000);
-console.log(customer1.getname());
-console.log(customer1.getbalance());
-console.log(customer1.setbalance(50000));
-console.log(customer1.getbalance());
+// const customer1 = new Bank("chandu", "ASDEF1", 25000);
+// console.log(customer1.getname());
+// console.log(customer1.getbalance());
+// console.log(customer1.setbalance(50000));
+// console.log(customer1.getbalance());
+
+function primeHai(n) {
+  if (n <= 1) return false;
+  if (n === 2) return true;
+
+  for (let i = 3; i <= Math.floor(n / 2); i += 2) {
+    if (n % 2 === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(primeHai(16));
