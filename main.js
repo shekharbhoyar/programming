@@ -33,7 +33,19 @@ if (pr === null) {
 
     //sum of n natural numbers
 
-    let 
+    // let sum = 0;
+    // for (let i = 0; i <= n; i++) {
+    //   sum += i;
+    // }
+    // console.log(sum);
+
+    let sum = 0;
+    while (n > 0) {
+      rem = n % 10;
+      sum += rem;
+      n = Math.floor(n / 10);
+    }
+    console.log(sum);
   } else if (n <= 0) {
     console.log("number should be positive and above zero");
   }
