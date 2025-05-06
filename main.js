@@ -39,13 +39,23 @@ if (pr === null) {
     // }
     // console.log(sum);
 
-    let sum = 0;
+    //sum of digits
+    // let sum = 0;
+    // while (n > 0) {
+    //   rem = n % 10;
+    //   sum += rem;
+    //   n = Math.floor(n / 10);
+    // }
+    // console.log(sum);
+
+    // reverse a number
+    let rev = 0;
     while (n > 0) {
       rem = n % 10;
-      sum += rem;
+      rev = rev * 10 + rem;
       n = Math.floor(n / 10);
     }
-    console.log(sum);
+    console.log(rev);
   } else if (n <= 0) {
     console.log("number should be positive and above zero");
   }
