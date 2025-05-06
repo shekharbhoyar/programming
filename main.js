@@ -58,22 +58,22 @@ if (pr === null) {
     // console.log(rev);
 
     //strong number
-    let sum = 0;
-    let copy = n;
-    while (n > 0) {
-      let rem = n % 10;
-      let fact = 1;
-      for (let i = 1; i <= rem; i++) {
-        fact *= i;
-      }
-      sum += fact;
-      n = Math.floor(n / 10);
-    }
-    if (copy === sum) {
-      console.log("strong number");
-    } else {
-      console.log("not a strong number");
-    }
+    // let sum = 0;
+    // let copy = n;
+    // while (n > 0) {
+    //   let rem = n % 10;
+    //   let fact = 1;
+    //   for (let i = 1; i <= rem; i++) {
+    //     fact *= i;
+    //   }
+    //   sum += fact;
+    //   n = Math.floor(n / 10);
+    // }
+    // if (copy === sum) {
+    //   console.log("strong number");
+    // } else {
+    //   console.log("not a strong number");
+    // }
   } else if (n <= 0) {
     console.log("number should be positive and above zero");
   }
