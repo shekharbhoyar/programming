@@ -15,12 +15,25 @@ if (pr === null) {
 
     //   console.log(primehai);
 
-    for (let i = 0; i <= Math.floor(n / 2); i++) {
-      if (n % i === 0) {
-        console.log(i);
-      }
-    }
-    console.log(n);
+    //factors
+    // for (let i = 0; i <= Math.floor(n / 2); i++) {
+    //   if (n % i === 0) {
+    //     console.log(i);
+    //   }
+    // }
+    // console.log(n);
+
+    //factorial
+
+    // let fact = 1;
+    // for (let i = 1; i <= n; i++) {
+    //   fact *= i;
+    // }
+    // console.log(fact);
+
+    //sum of n natural numbers
+
+    let 
   } else if (n <= 0) {
     console.log("number should be positive and above zero");
   }
