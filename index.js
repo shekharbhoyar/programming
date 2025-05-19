@@ -1082,16 +1082,32 @@
 // // console.log(primeHai(2));
 // // console.log(primeHai(13));
 
-let n = Number(prompt("give any number"));
-if (n === null) {
-  console.log("cancelled");
-} else {
-  if (n > 0) {
-    console.log("positive number");
-  } else if (n < 0) {
-    console.log("number should be positive and above zero");
-  }
-  if (isNaN(n)) {
-    console.log("invalid input");
-  }
-}
+// let n = Number(prompt("give any number"));
+// if (n === null) {
+//   console.log("cancelled");
+// } else {
+//   if (n > 0) {
+//     console.log("positive number");
+//   } else if (n < 0) {
+//     console.log("number should be positive and above zero");
+//   }
+//   if (isNaN(n)) {
+//     console.log("invalid input");
+//   }
+// }
+console.log("1");
+setTimeout(() => {
+  console.log("2");
+});
+new Promise((resolve, reject) => {
+  resolve(
+    setTimeout(() => {
+      console.log("3");
+    })
+  );
+});
+new Promise((resolve, reject) => {
+  resolve();
+}).then(() => {
+  console.log("4");
+});
