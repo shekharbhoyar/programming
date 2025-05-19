@@ -1095,19 +1095,39 @@
 //     console.log("invalid input");
 //   }
 // }
-console.log("1");
-setTimeout(() => {
-  console.log("2");
+// console.log("1");
+// setTimeout(() => {
+//   console.log("2");
+// });
+// new Promise((resolve, reject) => {
+//   resolve(
+//     setTimeout(() => {
+//       console.log("3");
+//     })
+//   );
+// });
+// new Promise((resolve, reject) => {
+//   resolve();
+// }).then(() => {
+//   console.log("4");
+// });
+
+function makeDeepCopy(obj) {
+  if (typeof obj !== "object" || obj === null) {
+    return obj;
+  }
+
+  let copiedval = Array.isArray(obj) ? [] : {};
+  let keys = Object.keys(obj);
+
+  for (let i = 0; i < keys.length; i++) {
+    copiedval[keys[i]] = makeDeepCopy(obj[keys[i]]);
+  }
+  return copiedval;
+}
+
+let copy = makeDeepCopy({
+  name: "ganu",
+  address: { city: "pune", country: "india" },
 });
-new Promise((resolve, reject) => {
-  resolve(
-    setTimeout(() => {
-      console.log("3");
-    })
-  );
-});
-new Promise((resolve, reject) => {
-  resolve();
-}).then(() => {
-  console.log("4");
-});
+console.log(copy);
